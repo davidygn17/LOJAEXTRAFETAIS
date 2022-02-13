@@ -1,0 +1,226 @@
+body{
+    font-family:  'Arial Narrow Bold', sans-serif, ;
+    color: #1c1c1c;
+}  
+
+h1, h2, h3{
+    font-family: apple-system, sans-serif;
+    color: #000000;
+}
+.botao {
+    color: #f5e4e0;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #9e2b25;
+    
+
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9e2b25;
+}
+nav > a {
+    text-decoration: none;
+    color: #f5e4e0;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+
+}
+nav ul li a {
+
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f5e4e0;
+}
+/*Cabeçalho*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../imagens/apples-1841132_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f5e4e0;
+    text-align: center;
+    padding: 20px;
+}
+header h1{
+    color: #f5e4e0;
+}
+
+head p{
+    margin-bottom: 2em;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center bold;
+    padding: 10px 10px 20px 20px;
+    background-color: #9e2b25;
+    color: #f5e4e0;
+}
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+#sobre .botao {
+    background-color: #f1f1f1;
+    color: #1c1c1c; 
+}
+#serviços{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center bold;
+    background-image: url(../imagens/tomato-2556426_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+}
+#serviços div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.textserviços h3{
+    color: #f5e4e0;
+}
+.textserviços{
+    color: #f5e4e0;
+}
+#fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9e2b25;
+    padding-top: 20px;
+}
+#fotos h2 {
+    margin-bottom: 20px;
+}
+#fotos img {
+    width: 650px;
+    height: 650px;
+    
+}
+#contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:30px ;
+}
+#contatos h2 {
+    color: #000000;
+}
+#contatos img {
+    width: 150px;
+    height: 150px;
+}
+/*rodape*/
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #9e2b25;
+    color: #f5e4e0;
+}
+footer a {
+    text-decoration: none;
+    color:#000000 ;
+}
+
+@media screen and (min-width: 768px) {
+
+    /*nav*/
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;  
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    
+/*cabeçalho*/
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content:center;
+    }
+    #sobre {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+
+}
+/*serviços*/
+
+    #serviços{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    #serviços h2 {
+        text-align: center;
+        width: 100%;
+    }
+    #serviços div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    #fotos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #fotos h2{
+        width: 100%;
+        text-align: center;
+    }
+    #fotos img {
+        width: 33.3333333%;
+    }   
+    #contatos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #contato h2, #contato p {
+        width:100%;    
+    }
+}    
